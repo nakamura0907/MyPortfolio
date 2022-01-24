@@ -1,5 +1,5 @@
-import { css } from '@emotion/core'
-import { color } from './valiables'
+import { css } from '@emotion/react'
+import { color, mediaQuery } from './valiables'
 
 export default css`
   section:not(:first-of-type) {
@@ -37,6 +37,11 @@ export default css`
   /* .about */
 
   .about {
+
+    .avatar {
+      margin-bottom: 1.4rem;
+    }
+
     h3 {
       margin-bottom: 0.5rem;
       padding: 0.5rem 0.35rem;
@@ -48,6 +53,21 @@ export default css`
     .font-bold {
       display: inline-block;
       margin-right: 0.5rem;
+    }
+
+    .col- {
+      @media (min-width: ${mediaQuery.lg}px) {
+        &lg- {
+          &3 {
+            min-width: fit-content;
+            flex: 1;
+          }
+
+          &7 {
+            flex: 2;
+          }
+        }
+      }
     }
   }
 

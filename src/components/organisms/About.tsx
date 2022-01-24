@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => {
   return (
@@ -9,7 +10,16 @@ const About = () => {
           <p>セクションに関しての説明</p>
         </div>
         <div className="row">
-          <div className="col-lg-3">{/* 自画像を表示するならここに */}</div>
+          <div className="col-lg-3">
+            <div className="l-flex l-flex-justify-center">
+              <StaticImage
+                src='../../images/avatar.png'
+                alt='avatar'
+                width={300}
+                className='avatar'
+                />
+              </div>
+          </div>
           <div className="col-lg-7 content">
             <h3>Nakamura0907</h3>
             <p>自分に対しての簡単な紹介文</p>

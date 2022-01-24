@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Global } from '@emotion/core'
+import { Global } from '@emotion/react'
 import Layout from '../components/Layout'
 import Hero from '../components/organisms/Hero'
 import About from '../components/organisms/About'

@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { color, mediaQuery } from './valiables'
 
 export default css`
@@ -39,6 +39,10 @@ export default css`
       font-size: 1.4rem;
       color: rgba(255, 255, 255, 0.85);
     }
+  }
+
+  .avatar {
+    margin-top: 1.4rem;
   }
 
   .header-nav {

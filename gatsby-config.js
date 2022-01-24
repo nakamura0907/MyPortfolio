@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
     title: 'MyPortfolio',
@@ -18,6 +16,13 @@ module.exports = {
       options: {
         name: 'content',
         path: `${__dirname}/src/content`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`
       }
     },
     {
@@ -51,6 +56,7 @@ module.exports = {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
       }
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',

@@ -1,6 +1,7 @@
 import React from 'react'
 import Scroll from 'react-anchor-link-smooth-scroll'
 import { Link } from 'gatsby'
+import { StaticImage } from "gatsby-plugin-image"
 import styles from '../styles/header'
 
 const Header = () => {
@@ -10,7 +11,11 @@ const Header = () => {
         <div className="site-title">
           <Link to="/">Nakamura0907 Portfolio</Link>
         </div>
-        <div>{/* アバターがあれば丸画像で配置 */}</div>
+        <div>
+          <div className="l-flex l-flex-justify-center">
+            <StaticImage src='../images/avatar.png' alt='avatar' width={200} className='avatar avatar-circle' />
+          </div>
+        </div>
       </div>
       <nav className="header-nav">
         <ul className="header-nav-list">

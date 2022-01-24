@@ -1,4 +1,4 @@
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { color, font, mediaQuery } from './valiables'
 
 export default css`
@@ -39,6 +39,19 @@ export default css`
 
   img {
     width: 100%;
+  }
+
+  .l-flex {
+    display: flex;
+    &-justify-center {
+      justify-content: center;
+    }
+  }
+
+  .avatar {
+    &-circle {
+      border-radius: 50%
+    }
   }
 
   .nav-toggle {
@@ -109,6 +122,7 @@ export default css`
       &lg- {
         @media (min-width: ${mediaQuery.lg}px) {
           &3 {
+            padding: 0 15px;
             width: 30%;
           }
 
