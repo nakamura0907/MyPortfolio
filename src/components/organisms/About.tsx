@@ -25,19 +25,19 @@ const About = () => {
             <p>自分に対しての簡単な紹介文</p>
             <ul>
               <li>
-                <span className="font-bold">生年月日:</span>
+                <span className="font-bold mr-2">生年月日:</span>
                 <span>1999年09月07日</span>
               </li>
               <li>
-                <span className="font-bold">年齢:</span>
+                <span className="font-bold mr-2">年齢:</span>
                 <span>22歳</span>
               </li>
               <li>
-                <span className="font-bold">出身地:</span>
+                <span className="font-bold mr-2">出身地:</span>
                 <span>愛知県</span>
               </li>
               <li>
-                <span className="font-bold">メールアドレス:</span>
+                <span className="font-bold mr-2">メールアドレス:</span>
                 <span>準備中です</span>
               </li>
             </ul>

@@ -50,11 +50,6 @@ export default css`
       text-transform: uppercase;
     }
 
-    .font-bold {
-      display: inline-block;
-      margin-right: 0.5rem;
-    }
-
     .col- {
       @media (min-width: ${mediaQuery.lg}px) {
         &lg- {
@@ -68,6 +63,23 @@ export default css`
           }
         }
       }
+    }
+  }
+
+  .qualifications {
+    .content {
+      border-left: 1px solid ${color.primary.main};
+
+    }
+
+    ul {
+      margin-left: 1rem;
+    }
+
+    li {
+      padding-top: 1.4rem;
+      padding-right: 1rem;
+      padding-bottom: 1.4rem;
     }
   }
 

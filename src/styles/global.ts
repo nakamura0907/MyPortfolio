@@ -41,13 +41,6 @@ export default css`
     width: 100%;
   }
 
-  .l-flex {
-    display: flex;
-    &-justify-center {
-      justify-content: center;
-    }
-  }
-
   .avatar {
     &-circle {
       border-radius: 50%
@@ -109,6 +102,18 @@ export default css`
     }
   }
 
+  .grid {
+    display: grid;
+
+    &-lg- {
+      @media (min-width: ${mediaQuery.lg}px) {
+        &2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -140,6 +145,18 @@ export default css`
         }
       }
     }
+  }
+
+  .l-flex {
+    display: flex;
+    &-justify-center {
+      justify-content: center;
+    }
+  }
+
+  .mr-2 {
+    display: inline-block;
+    margin-right: .7rem;
   }
 
   .font-bold {
