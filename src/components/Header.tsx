@@ -5,8 +5,8 @@ import styles from '../styles/header'
 const Header = () => {
   return (
     <header className="header" css={styles}>
-      <div>
-        <div>
+      <div className="profile">
+        <div className="site-title">
           <Link to="/">Nakamura0907 Portfolio</Link>
         </div>
       </div>

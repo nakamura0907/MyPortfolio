@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import { color, font, mediaQuery } from './valiables'
 
 export default css`
   * {
@@ -6,14 +7,14 @@ export default css`
   }
 
   html {
-    font-size: 16px;
+    font-size: ${font.size};
   }
 
   body {
     margin: 0;
     line-height: 1.6;
-    font-family: Arial, sans-serif;
-    color: #2d2d2d;
+    font-family: ${font.family.default};
+    color: ${font.color};
   }
 
   h1,
@@ -23,6 +24,8 @@ export default css`
   h5,
   h6 {
     margin: 0;
+    line-height: 1.3;
+    font-family: ${font.family.headline};
   }
 
   p {
@@ -38,20 +41,46 @@ export default css`
     width: 100%;
   }
 
+  .nav-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: ${color.primary.main};
+    color: ${color.primary.text};
+    cursor: pointer;
+    z-index: 9999;
+
+    @media (min-width: ${mediaQuery.xl}px) {
+      display: none;
+    }
+  }
+
+  .main {
+    @media (min-width: ${mediaQuery.xl}px) {
+      margin-left: 300px;
+    }
+  }
+
   .container {
     margin: 0 auto;
     padding: 0 1rem;
     transition: max-width 0.3s ease;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${mediaQuery.md}px) {
       max-width: 720px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: ${mediaQuery.lg}px) {
       max-width: 960px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: ${mediaQuery.xl}px) {
       max-width: 1140px;
     }
   }
@@ -67,11 +96,21 @@ export default css`
 
     .col- {
       &lg- {
-        @media (min-width: 992px) {
+        @media (min-width: ${mediaQuery.lg}px) {
+          &3 {
+            width: 30%;
+          }
+
           &5 {
             flex: 0 0 auto;
             padding: 0 15px;
             width: 50%;
+          }
+
+          &7 {
+            flex: 0 0 auto;
+            padding: 0 15px;
+            width: 70%;
           }
         }
       }
