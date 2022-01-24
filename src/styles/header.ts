@@ -40,4 +40,19 @@ export default css`
       color: rgba(255, 255, 255, 0.85);
     }
   }
+
+  .header-nav {
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      display: block;
+      padding: 0.7rem 0;
+      transition: color 0.3s ease;
+      &:hover {
+        color: ${color.primary.main};
+      }
+    }
+  }
 `

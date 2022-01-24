@@ -85,6 +85,17 @@ export default css`
     }
   }
 
+  .footer {
+    margin-top: 1.9rem;
+    padding: 1.4rem 1rem;
+    color: ${color.background.text};
+    background: ${color.background.main};
+
+    a {
+      color: white;
+    }
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;

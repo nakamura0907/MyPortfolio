@@ -5,6 +5,8 @@ import React from 'react'
 import { Global } from '@emotion/core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 import Header from './Header'
 import globalStyle from '../styles/global'
 
@@ -21,14 +23,23 @@ const Layout: React.FC = ({ children }) => {
 
   return (
     <>
+      <Helmet title="Nakamura0907 Portfolio" />
       <Global styles={globalStyle} />
-      <div className={`l-container ${navBar ? 'is-open' : ''}`}>
+      <div className={`l-container ${navBar ? 'is-open' : ''}`} id="top">
         <div className="nav-toggle" onClick={() => setNavBar(!navBar)}>
           <FontAwesomeIcon icon={navBar ? faTimes : faBars} />
         </div>
         <Header />
-        <main className="main">{children}</main>
-        <footer className="footer">footer</footer>
+        <main className="main">
+          <article className="primary">{children}</article>
+          <footer className="footer">
+            <div className="footer-bottom">
+              <small className="copyright">
+                &copy; <Link to="/">Nakamura0907 Portfolio</Link>, All rights reserved.
+              </small>
+            </div>
+          </footer>
+        </main>
         {/* <a href="#" className="button-fab">
           TOP
         </a> */}
