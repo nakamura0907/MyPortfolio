@@ -23,7 +23,8 @@ export const color = {
 }
 
 export const mediaQuery = {
-  md: 769,
+  // md: 769,
+  md: 768,
   lg: 992,
   xl: 1200
 }

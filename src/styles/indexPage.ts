@@ -84,7 +84,6 @@ export default css`
   }
 
   /* .Skills */
-  /* TODO: gridに変更する? */
   .progress {
     margin-bottom: 0.7rem;
 
@@ -106,6 +105,49 @@ export default css`
         border-radius: 4px;
         background: #afd0dd;
       }
+    }
+  }
+
+  /** .works */
+  .works {
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      &-wrap {
+        position: relative;
+        width: 100%;
+
+        @media (min-width: ${mediaQuery.md}px) {
+          width: 50%;
+        }
+
+        @media (min-width: ${mediaQuery.lg}px) {
+          width: 33%;
+        }
+
+        &:before {
+          content: "";
+          display: block;
+          padding-top: 100%
+        }
+      }
+    }
+    .work-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .work {
+      transition: transform .3s ease;
+    }
+    .work:hover {
+      transform: scale(1.2);
     }
   }
 `

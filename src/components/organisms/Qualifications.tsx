@@ -6,7 +6,10 @@ const Qualifications = () => {
       <div className="container">
         <div className="section-title">
           <h2>Qualifications</h2>
-          <p>今後取得したい資格について書く</p>
+          <p>
+            今後は、ネットワークスペシャリスト試験やデータベーススペシャリスト試験の合格を目指しています。
+            ベンダー資格では、LPICやAWS認定試験などの合格を目標としています。
+          </p>
         </div>
         <div className="content">
           <ul className='grid grid-lg-2'>

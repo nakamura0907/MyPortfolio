@@ -3,23 +3,23 @@ import React from 'react'
 
 const progressList = [
   {
-    value: 85,
+    value: 100,
     title: 'PHP'
   },
   {
-    value: 75,
+    value: 80,
     title: 'JavaScript'
   },
   {
-    value: 65,
+    value: 75,
     title: 'Node.js'
   },
   {
-    value: 60,
+    value: 70,
     title: 'React'
   },
   {
-    value: 50,
+    value: 55,
     title: 'TypeScript'
   },
   {
@@ -81,7 +81,11 @@ const Skills = () => {
       <div className="container">
         <div className="section-title">
           <h2>Skills</h2>
-          <p>今後伸ばしたいスキルなどについて書く。あくまで主観ということも</p>
+          <p><span className="font-bold">もっとも得意なスキルを100%</span>として、自らのスキルを主観的に判断してみました。</p>
+          <p>
+            既にある程度の知識を持つPHPと、クロスプラットフォーム対応のFlutterを重点的に伸ばしたいです。
+            その経験をもとに他言語のスキルを底上げし、PHP・Flutterのスペシャリストかつ様々な言語に対応可能なエンジニアを目指します。
+          </p>
         </div>
         <div className="row content">
           <Progresses />

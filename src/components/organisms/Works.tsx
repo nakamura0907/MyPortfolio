@@ -1,5 +1,7 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
+// TODO: 名前の修正
 const Works = () => {
   return (
     <section className="works" id="works">
@@ -8,7 +10,18 @@ const Works = () => {
           <h2>Works</h2>
           <p>今後開発してみたいアプリについて書く</p>
         </div>
-        <div className="grid content">grid形式で画像を表示する</div>
+        <div className="content">
+          {/* TODO: スマホ画面時、レイアウトが崩れる。md以上で適用にする?? */}
+          <div className='content-wrap'>
+            <StaticImage src="../../images/hal_timetable/thumbnail.gif" alt='test' className='work-wrap' imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
+          </div>
+          <div className='content-wrap'>
+            <StaticImage src="../../images/my_diary/thumbnail.gif" alt='test' className='work-wrap' imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
+          </div>
+          <div className='content-wrap'>
+            <StaticImage src="../../images/hal_timetable/thumbnail.gif" alt='test' className='work-wrap'  imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
+          </div>
+        </div>
       </div>
     </section>
   )

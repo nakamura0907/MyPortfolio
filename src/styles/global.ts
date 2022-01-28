@@ -49,13 +49,13 @@ export default css`
 
   .nav-toggle {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 1.4rem;
+    right: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background: ${color.primary.main};
     color: ${color.primary.text};
@@ -102,13 +102,44 @@ export default css`
     }
   }
 
+  .scroll-top {
+    position: fixed;
+    bottom: 1.4rem;
+    right: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: ${color.primary.main};
+    color: ${color.primary.text};
+    cursor: pointer;
+    z-index: 9999;
+
+    @media (min-width: ${mediaQuery.xl}px) {
+      display: none;
+    }
+  }
+
   .grid {
     display: grid;
+
+    &-md- {
+      @media (min-width: ${mediaQuery.md}px) {
+        &2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
 
     &-lg- {
       @media (min-width: ${mediaQuery.lg}px) {
         &2 {
           grid-template-columns: repeat(2, 1fr);
+        }
+        &3 {
+          grid-template-columns: repeat(3, 1fr);
         }
       }
     }

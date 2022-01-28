@@ -11,7 +11,7 @@ export default css`
   color: ${color.background.text};
   background: ${color.background.main};
   transition: left 0.3s ease;
-  z-index: 9999;
+  z-index: 9900;
 
   @media (min-width: ${mediaQuery.xl}px) {
     left: 0;

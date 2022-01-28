@@ -4,9 +4,10 @@
 import React from 'react'
 import { Global } from '@emotion/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import Helmet from 'react-helmet'
+import { faBars, faTimes, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
+import Scroll from "react-anchor-link-smooth-scroll";
+import Helmet from 'react-helmet'
 import Header from './Header'
 import globalStyle from '../styles/global'
 
@@ -40,9 +41,9 @@ const Layout: React.FC = ({ children }) => {
             </div>
           </footer>
         </main>
-        {/* <a href="#" className="button-fab">
-          TOP
-        </a> */}
+          <Scroll href='#top' className='scroll-top'>
+            <FontAwesomeIcon icon={faArrowUp} />
+          </Scroll>
       </div>
     </>
   )
