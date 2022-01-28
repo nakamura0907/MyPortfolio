@@ -22,12 +22,23 @@ const initialState: State = {
 const Layout: React.FC = ({ children }) => {
   const [navBar, setNavBar] = React.useState(initialState.navBar)
 
+  const toggleNavigation = () => {
+    if (navBar) {
+      // アクティブなら閉じる
+      document.body.classList.remove("is-open");
+    } else {
+      // 開ける
+      document.body.classList.add("is-open");
+    }
+    setNavBar(!navBar);
+  }
+
   return (
     <>
       <Helmet title="Nakamura0907 Portfolio" />
       <Global styles={globalStyle} />
-      <div className={`l-container ${navBar ? 'is-open' : ''}`} id="top">
-        <div className="nav-toggle" onClick={() => setNavBar(!navBar)}>
+      <div className="l-container" id="top">
+        <div className="nav-toggle" onClick={() => toggleNavigation()}>
           <FontAwesomeIcon icon={navBar ? faTimes : faBars} />
         </div>
         <Header />

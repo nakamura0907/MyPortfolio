@@ -15,6 +15,12 @@ export default css`
     line-height: 1.6;
     font-family: ${font.family.default};
     color: ${font.color};
+
+    @media (max-width: ${mediaQuery.xl - 1}px) {
+      &.is-open {
+        overflow: hidden;
+      }
+    }
   }
 
   h1,
