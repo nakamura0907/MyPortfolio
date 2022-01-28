@@ -111,43 +111,58 @@ export default css`
   /** .works */
   .works {
     .content {
-      display: flex;
-      flex-wrap: wrap;
-      &-wrap {
-        position: relative;
-        width: 100%;
-
-        @media (min-width: ${mediaQuery.md}px) {
-          width: 50%;
-        }
-
-        @media (min-width: ${mediaQuery.lg}px) {
-          width: 33%;
-        }
-
-        &:before {
-          content: "";
-          display: block;
-          padding-top: 100%
+      .work {
+        transition: transform .3s ease;
+        &:hover {
+          transform: scale(1.2);
         }
       }
-    }
-    .work-wrap {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-    }
 
-    .work {
-      transition: transform .3s ease;
-    }
-    .work:hover {
-      transform: scale(1.2);
+      @media (max-width: ${mediaQuery.md - 1}px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .work-wrap {
+          max-width: 350px;
+          max-height: 350px;
+        }
+      }
+
+      @media (min-width: ${mediaQuery.md}px) {
+        display: flex;
+        flex-wrap: wrap;
+        &-wrap {
+          position: relative;
+          width: 50%;
+
+          &:before {
+            content: "";
+            display: block;
+            padding-top: 100%
+          }
+        }
+
+        .work {
+          &-wrap {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+          }
+        }
+      }
+
+      @media (min-width: ${mediaQuery.lg}px) {
+        .content-wrap {
+          width: 33%;
+        }
+      }
+
     }
   }
 `

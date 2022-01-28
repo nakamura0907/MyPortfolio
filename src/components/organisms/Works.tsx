@@ -1,7 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
-// TODO: 名前の修正
 const Works = () => {
   return (
     <section className="works" id="works">
