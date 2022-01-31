@@ -170,7 +170,6 @@ export default css`
 
           &5 {
             flex: 0 0 auto;
-            padding: 0 15px;
             width: 50%;
           }
 

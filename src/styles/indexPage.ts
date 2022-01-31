@@ -13,6 +13,7 @@ export default css`
       position: relative;
       margin-bottom: 1rem;
       padding-bottom: 0.5rem;
+      font-size: 2.8rem;
 
       &:after {
         content: '';
@@ -20,7 +21,7 @@ export default css`
         bottom: 0;
         left: 0;
         display: block;
-        width: 40px;
+        width: 80px;
         height: 3px;
         background: ${color.primary.main};
       }
@@ -84,33 +85,45 @@ export default css`
   }
 
   /* .Skills */
-  .progress {
-    margin-bottom: 0.7rem;
+  .skills {
+    .content {
+      column-gap: 20px;
+    }
 
-    &-header {
-      display: flex;
-      span {
-        display: block;
-        margin-left: auto;
+    .progress {
+      margin-bottom: 0.7rem;
+
+      &-header {
+        display: flex;
+        span {
+          display: block;
+          margin-left: auto;
+        }
+      }
+
+      &-bar {
+        height: 15px;
+        background: ${color.primary.main};
+
+        &-container {
+          overflow: hidden;
+          height: 15px;
+          border-radius: 4px;
+          background: #afd0dd;
+        }
       }
     }
 
-    &-bar {
-      height: 15px;
-      background: ${color.primary.main};
-
-      &-container {
-        overflow: hidden;
-        height: 15px;
-        border-radius: 4px;
-        background: #afd0dd;
+    @media (min-width: ${mediaQuery.lg}px) {
+      .content > div {
+        flex: 1;
       }
     }
   }
 
-  /** .works */
   .works {
     .content {
+
       .work {
         transition: transform .3s ease;
         &:hover {
@@ -119,50 +132,27 @@ export default css`
       }
 
       @media (max-width: ${mediaQuery.md - 1}px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
         .work-wrap {
+          margin: 0 auto;
           max-width: 350px;
           max-height: 350px;
         }
       }
-
       @media (min-width: ${mediaQuery.md}px) {
         display: flex;
         flex-wrap: wrap;
-        &-wrap {
-          position: relative;
+        justify-content: space-between;
+
+        .work-wrap {
           width: 50%;
-
-          &:before {
-            content: "";
-            display: block;
-            padding-top: 100%
-          }
-        }
-
-        .work {
-          &-wrap {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            margin: auto;
-          }
         }
       }
 
       @media (min-width: ${mediaQuery.lg}px) {
-        .content-wrap {
+        .work-wrap {
           width: 33%;
         }
       }
-
     }
   }
 `

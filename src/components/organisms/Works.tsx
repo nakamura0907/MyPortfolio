@@ -1,5 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { ERPSImage, HTTImage, MyDImage, NWeatherImage, TicTacImage, TodoImage, TownImage } from '../molecules/WorkItem'
 
 const Works = () => {
   return (
@@ -9,17 +10,14 @@ const Works = () => {
           <h2>Works</h2>
           <p>今後開発してみたいアプリについて書く</p>
         </div>
-        <div className="content">
-          {/* TODO: スマホ画面時、レイアウトが崩れる。md以上で適用にする?? */}
-          <div className='content-wrap'>
-            <StaticImage src="../../images/hal_timetable/thumbnail.gif" alt='test' className='work-wrap' imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
-          </div>
-          <div className='content-wrap'>
-            <StaticImage src="../../images/my_diary/thumbnail.gif" alt='test' className='work-wrap' imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
-          </div>
-          <div className='content-wrap'>
-            <StaticImage src="../../images/hal_timetable/thumbnail.gif" alt='test' className='work-wrap'  imgClassName='work' objectFit='contain' backgroundColor='#F0F0F0' />
-          </div>
+        <div className='content'>
+            <StaticImage src="../../images/now_weather/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/hal_timetable/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/my_diary/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/todo_next/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/easy_rps/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/town/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
+            <StaticImage src="../../images/tictactoe/thumbnail.png" alt='React TicTacToe App.' className='work-wrap' imgClassName='work' layout='fullWidth'  objectFit='contain' />
         </div>
       </div>
     </section>
