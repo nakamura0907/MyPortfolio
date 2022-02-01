@@ -37,7 +37,7 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Helmet title="Nakamura0907 Portfolio" />
       <Global styles={globalStyle} />
-      <div className="l-container" id="top">
+      <div className="l-container in-page-link" id="top">
         <div className="nav-toggle" onClick={() => toggleNavigation()}>
           <FontAwesomeIcon icon={navBar ? faTimes : faBars} />
         </div>

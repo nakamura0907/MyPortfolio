@@ -4,7 +4,25 @@ import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import styles from '../styles/header'
 
-const Header = () => {
+interface Props {
+  location: Location
+}
+
+interface State {
+  inPageLinks: Element[]
+}
+
+const initialState: State = {
+  inPageLinks: []
+}
+
+const Header: React.FC<Props> = ({location}) => {
+  const [inPageLinks, setInPageLinks] = React.useState(initialState.inPageLinks);
+
+  React.useEffect(() => {
+    setInPageLinks(Array.from(document.querySelectorAll(".in-page-link")));
+  }, [location])
+
   return (
     <header className="header" css={styles}>
       <div className="profile">
@@ -17,24 +35,13 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <nav className="header-nav">
+      <nav className="header-nav" aria-label='page-in-links'>
         <ul className="header-nav-list">
-          <li className="header-nav-item">
-            <Scroll href="#top">TOP</Scroll>
-          </li>
-          {/* TODO: ↓ DOMを取得し、ページごとに切り替える */}
-          <li className="header-nav-item">
-            <Scroll href="#about">ABOUT</Scroll>
-          </li>
-          <li className="header-nav-item">
-            <Scroll href="#qualifications">QUALIFICATIONS</Scroll>
-          </li>
-          <li className="header-nav-item">
-            <Scroll href="#skills">SKILLS</Scroll>
-          </li>
-          <li className="header-nav-item">
-            <Scroll href="#works">WORKS</Scroll>
-          </li>
+          {inPageLinks.map((element, index) => (
+            <li className='header-nav-item' key={index}>
+              <Scroll href={`#${element.id}`}>{element.id}</Scroll>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>

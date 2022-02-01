@@ -77,7 +77,7 @@ const Progresses = () => {
 
 const Skills = () => {
   return (
-    <section className="skills" id="skills">
+    <section className="skills in-page-link" id="skills">
       <div className="container">
         <div className="section-title">
           <h2>Skills</h2>

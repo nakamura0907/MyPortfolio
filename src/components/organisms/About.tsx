@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const About = () => {
   return (
-    <section className="about" id="about">
+    <section className="about in-page-link" id="about">
       <div className="container">
         <div className="section-title">
           <h2>About</h2>

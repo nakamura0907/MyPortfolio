@@ -2,7 +2,7 @@ import React from 'react'
 
 const Qualifications = () => {
   return (
-    <section className="qualifications" id="qualifications">
+    <section className="qualifications in-page-link" id="qualifications">
       <div className="container">
         <div className="section-title">
           <h2>Qualifications</h2>

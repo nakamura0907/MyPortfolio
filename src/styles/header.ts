@@ -50,6 +50,10 @@ export default css`
       list-style-type: none;
     }
 
+    &-item {
+      text-transform: uppercase;
+    }
+
     a {
       display: block;
       padding: 0.7rem 0;

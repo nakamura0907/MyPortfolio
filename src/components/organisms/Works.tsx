@@ -3,7 +3,7 @@ import { ERPSImage, HTTImage, MyDImage, NWeatherImage, TicTacImage, TodoImage, T
 
 const Works = () => {
   return (
-    <section className="works" id="works">
+    <section className="works in-page-link" id="works">
       <div className="container">
         <div className="section-title">
           <h2>Works</h2>
