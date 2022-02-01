@@ -1,12 +1,11 @@
+/** @jsx jsx */
 import React from 'react'
 import Scroll from 'react-anchor-link-smooth-scroll'
 import { Link } from 'gatsby'
+import { jsx } from '@emotion/react'
 import { StaticImage } from "gatsby-plugin-image"
+import { useLocation } from "@reach/router"
 import styles from '../styles/header'
-
-interface Props {
-  location: Location
-}
 
 interface State {
   inPageLinks: Element[]
@@ -16,7 +15,8 @@ const initialState: State = {
   inPageLinks: []
 }
 
-const Header: React.FC<Props> = ({location}) => {
+const Header: React.FC = () => {
+  const location = useLocation();
   const [inPageLinks, setInPageLinks] = React.useState(initialState.inPageLinks);
 
   React.useEffect(() => {
@@ -39,7 +39,7 @@ const Header: React.FC<Props> = ({location}) => {
         <ul className="header-nav-list">
           {inPageLinks.map((element, index) => (
             <li className='header-nav-item' key={index}>
-              <Scroll href={`#${element.id}`}>{element.id}</Scroll>
+              <Scroll href={`#${element.id}`}>{element.id ?? "TOP"}</Scroll>
             </li>
           ))}
         </ul>

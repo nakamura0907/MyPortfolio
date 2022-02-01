@@ -47,6 +47,16 @@ export default css`
     width: 100%;
   }
 
+  .l-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .main {
+      margin-bottom: auto;
+    }
+  }
+
   .avatar {
     &-circle {
       border-radius: 50%
@@ -102,6 +112,11 @@ export default css`
     padding: 1.4rem 1rem;
     color: ${color.background.text};
     background: ${color.background.main};
+    transition: margin-left .3s ease;
+
+    @media (min-width: ${mediaQuery.xl}px) {
+      margin-left: 300px; // navigation width
+    }
 
     a {
       color: white;

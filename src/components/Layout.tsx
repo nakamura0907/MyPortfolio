@@ -37,21 +37,21 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Helmet title="Nakamura0907 Portfolio" />
       <Global styles={globalStyle} />
-      <div className="l-container in-page-link" id="top">
+      <div className="l-container">
         <div className="nav-toggle" onClick={() => toggleNavigation()}>
           <FontAwesomeIcon icon={navBar ? faTimes : faBars} />
         </div>
         <Header />
         <main className="main">
           <article className="primary">{children}</article>
-          <footer className="footer">
-            <div className="footer-bottom">
-              <small className="copyright">
-                &copy; <Link to="/">Nakamura0907 Portfolio</Link>, All rights reserved.
-              </small>
-            </div>
-          </footer>
         </main>
+        <footer className="footer">
+          <div className="footer-bottom">
+            <small className="copyright">
+              &copy; <Link to="/">Nakamura0907 Portfolio</Link>, All rights reserved.
+            </small>
+          </div>
+        </footer>
           <Scroll href='#top' className='scroll-top'>
             <FontAwesomeIcon icon={faArrowUp} />
           </Scroll>
