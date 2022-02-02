@@ -18,7 +18,7 @@ export const color = {
   },
   background: {
     main: '#101008',
-    text: '#91908C'
+    text: '#cccccc'
   }
 }
 

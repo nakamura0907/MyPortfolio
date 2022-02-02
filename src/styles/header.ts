@@ -46,12 +46,17 @@ export default css`
   }
 
   .header-nav {
-    ul {
+    &-list {
+      padding: 0;
       list-style-type: none;
     }
 
     &-item {
+      padding-left: 1rem;
       text-transform: uppercase;
+      &.is-active {
+        background: #414141;
+      }
     }
 
     a {
