@@ -1,23 +1,41 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
-    title: 'gatsby-starter-typescript-plus',
-    description: 'A starter kit for TypeScript-based Gatsby projects with sensible defaults.',
-    keywords: 'gatsbyjs, gatsby, javascript, sample, something',
+    title: 'MyPortfolio',
+    description: 'Nakamura0907 Portfolio',
+    keywords: 'gatsbyjs, portfolio',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
     author: {
-      name: 'Resi Respati',
-      url: 'https://twitter.com/resir014',
-      email: 'resir014@gmail.com'
+      name: 'nakamura0907',
+      url: 'https://twitter.com',
+      email: 'nakamura0907@example.com'
     }
   },
   plugins: [
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Nakamura0907 Portfolio',
+        short_name: 'N Portfolio',
+        start_url: '/',
+        background_color: '#000',
+        theme_color: '#000',
+        display: 'standalone',
+        icon: 'src/favicon.svg'
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'content',
         path: `${__dirname}/src/content`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`
       }
     },
     {
@@ -51,6 +69,7 @@ module.exports = {
         siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
       }
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
