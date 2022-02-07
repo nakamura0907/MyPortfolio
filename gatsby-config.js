@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'MyPortfolio',
-    description: 'nakamura0907 Portfolio',
+    description: 'Nakamura0907 Portfolio',
     keywords: 'gatsbyjs, portfolio',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
     author: {
@@ -11,6 +11,19 @@ module.exports = {
     }
   },
   plugins: [
+    'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Nakamura0907 Portfolio',
+        short_name: 'N Portfolio',
+        start_url: '/',
+        background_color: '#000',
+        theme_color: '#000',
+        display: 'standalone',
+        icon: 'src/favicon.svg'
+      }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
