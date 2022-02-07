@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from 'gatsby-plugin-image'
 
 const About = () => {
   return (
@@ -7,22 +7,16 @@ const About = () => {
       <div className="container">
         <div className="section-title">
           <h2>About</h2>
-          <p>セクションに関しての説明</p>
         </div>
         <div className="row">
           <div className="col-lg-3">
             <div className="l-flex l-flex-justify-center">
-              <StaticImage
-                src='../../images/avatar.png'
-                alt='avatar'
-                width={300}
-                className='avatar'
-                />
-              </div>
+              <StaticImage src="../../images/avatar.png" alt="avatar" width={300} className="avatar" />
+            </div>
           </div>
           <div className="col-lg-7 content">
             <h3>Nakamura0907</h3>
-            <p>自分に対しての簡単な紹介文</p>
+            <p>コーディングだけではなく要求定義から受け入れテストまで、幅広い作業のできるエンジニアを目指しています。</p>
             <ul>
               <li>
                 <span className="font-bold mr-2">生年月日:</span>
@@ -41,7 +35,7 @@ const About = () => {
                 <span>準備中です</span>
               </li>
             </ul>
-            <p>自己PRをここに</p>
+            <p>毎日継続的に勉強を行い、日々新しい技術や知識を取り入れています。</p>
           </div>
         </div>
       </div>
