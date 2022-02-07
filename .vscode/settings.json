@@ -11,14 +11,14 @@
     "public/**": true,
     "node_modules/**": true
   },
-  "eslint.autoFixOnSave": true,
+  // "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
-    { "language": "typescript", "autoFix": true },
-    { "language": "typescriptreact", "autoFix": true }
   ],
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
+    "source.fixAll.eslint": true,
+    "source.fixAll": true,
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

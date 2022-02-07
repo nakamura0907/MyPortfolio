@@ -23,11 +23,11 @@ const Qualifications = () => {
             </li>
             <li>
                 <span className="font-bold mr-2">HTML5 レベル2:</span>
-                <span>???</span>
+                <span>令和2年12月</span>
             </li>
             <li>
                 <span className="font-bold mr-2">HTML5 レベル1:</span>
-                <span>???</span>
+                <span>令和2年10月</span>
             </li>
             <li>
                 <span className="font-bold mr-2">PHP技術者認定試験 準上級:</span>
