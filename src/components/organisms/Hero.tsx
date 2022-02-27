@@ -1,10 +1,12 @@
 import React from 'react'
-import Image from '../../images/hero.gif'
 
 const Hero = () => {
   return (
     <section className="hero in-page-link" id="top">
-      <img src={Image} alt="hero-image" />
+      <div>
+        <h1>Welcome</h1>
+        <h2>Nakamura0907 Portfolio</h2>
+      </div>
     </section>
   )
 }
