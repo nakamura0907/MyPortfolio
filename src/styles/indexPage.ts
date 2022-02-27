@@ -35,28 +35,6 @@ export default css`
     align-items: center;
     justify-content: center;
     height: 100vh;
-
-    h1 {
-      font-size: 3.9rem;
-      text-align: center;
-    }
-
-    h2 {
-      font-size: 1.9rem;
-      opacity: 0;
-      animation: fadeIn forwards 2s ease 0s 1;
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    }
   }
 
   /* .about */
@@ -162,7 +140,7 @@ export default css`
       @media (min-width: ${mediaQuery.md}px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        /* justify-content: space-between; */
 
         .work-wrap {
           width: 50%;

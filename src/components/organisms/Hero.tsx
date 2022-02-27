@@ -1,14 +1,10 @@
 import React from 'react'
-import video from '../../hero.mp4'
+import Image from '../../images/hero.gif'
 
 const Hero = () => {
   return (
     <section className="hero in-page-link" id="top">
-      <div>
-        <video autoPlay loop muted playsInline style={{ width: '100%' }}>
-          <source src={video} />
-        </video>
-      </div>
+      <img src={Image} alt="hero-image" />
     </section>
   )
 }
