@@ -6,7 +6,7 @@ import { Global } from '@emotion/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'gatsby'
-import Scroll from "react-anchor-link-smooth-scroll";
+import Scroll from 'react-anchor-link-smooth-scroll'
 import Helmet from 'react-helmet'
 import Header from './Header'
 import globalStyle from '../styles/global'
@@ -25,17 +25,28 @@ const Layout: React.FC = ({ children }) => {
   const toggleNavigation = () => {
     if (navBar) {
       // アクティブなら閉じる
-      document.body.classList.remove("is-open");
+      document.body.classList.remove('is-open')
     } else {
       // 開ける
-      document.body.classList.add("is-open");
+      document.body.classList.add('is-open')
     }
-    setNavBar(!navBar);
+    setNavBar(!navBar)
   }
 
   return (
     <>
-      <Helmet title="Nakamura0907 Portfolio" />
+      <Helmet
+        title="Nakamura0907 Portfolio"
+        htmlAttributes={{
+          lang: 'ja'
+        }}
+        meta={[
+          {
+            name: 'description',
+            content: 'Nakamura0907 Portfolio'
+          }
+        ]}
+      />
       <Global styles={globalStyle} />
       <div className="l-container">
         <div className="nav-toggle" onClick={() => toggleNavigation()}>
@@ -52,9 +63,9 @@ const Layout: React.FC = ({ children }) => {
             </small>
           </div>
         </footer>
-          <Scroll href='#top' className='scroll-top'>
-            <FontAwesomeIcon icon={faArrowUp} />
-          </Scroll>
+        <Scroll href="#top" className="scroll-top">
+          <FontAwesomeIcon icon={faArrowUp} />
+        </Scroll>
       </div>
     </>
   )
