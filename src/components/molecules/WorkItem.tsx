@@ -27,6 +27,25 @@ const NWeatherImage = () => {
   )
 }
 
+const CPGExtensionImage = () => {
+  return (
+    <a
+      href="https://chrome.google.com/webstore/detail/color-property-getter/habnllbmpgfdedfjecifgipdaacfahcn?hl=ja&authuser=0"
+      target="_blank"
+      style={{ display: 'block' }}
+      className="work-wrap"
+    >
+      <StaticImage
+        src="../../images/cpg_extension/thumbnail.png"
+        alt="Color Property Getter. Chorme Extension"
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
+  )
+}
+
 const HTTImage = () => {
   return (
     <StaticImage
@@ -105,4 +124,4 @@ const TicTacImage = () => {
   )
 }
 
-export { FlutterTodoImage, NWeatherImage, HTTImage, MyDImage, ERPSImage, TodoImage, TownImage, TicTacImage }
+export { FlutterTodoImage, NWeatherImage, CPGExtensionImage, HTTImage, MyDImage, ERPSImage, TodoImage, TownImage, TicTacImage }
