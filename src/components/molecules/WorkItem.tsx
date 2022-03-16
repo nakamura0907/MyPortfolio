@@ -3,27 +3,29 @@ import React from 'react'
 
 const FlutterTodoImage = () => {
   return (
-    <StaticImage
-      src="../../images/flutter_todo/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://github.com/nakamura0907/todolist-flutter" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/flutter_todo/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
 const NWeatherImage = () => {
   return (
-    <StaticImage
-      src="../../images/now_weather/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://github.com/nakamura0907/now-weather" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/now_weather/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
@@ -61,66 +63,76 @@ const HTTImage = () => {
 
 const MyDImage = () => {
   return (
-    <StaticImage
-      src="../../images/my_diary/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://github.com/nakamura0907/MyDiary" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/my_diary/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
 const ERPSImage = () => {
   return (
-    <StaticImage
-      src="../../images/easy_rps/thumbnail.png"
-      alt="React TicTacToe App."
+    <a
+      href="https://github.com/nakamura0907/kuso_app/tree/develop/easyRPS"
+      target="_blank"
+      style={{ display: 'block' }}
       className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    >
+      <StaticImage
+        src="../../images/easy_rps/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
 const TodoImage = () => {
   return (
-    <StaticImage
-      src="../../images/todo_next/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://github.com/nakamura0907/TodoList_Next" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/todo_next/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
 const TownImage = () => {
   return (
-    <StaticImage
-      src="../../images/town/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://nakamura0907.wp.xdomain.jp/" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/town/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
 const TicTacImage = () => {
   return (
-    <StaticImage
-      src="../../images/tictactoe/thumbnail.png"
-      alt="React TicTacToe App."
-      className="work-wrap"
-      imgClassName="work"
-      layout="fullWidth"
-      objectFit="contain"
-    />
+    <a href="https://github.com/nakamura0907/Tic-Tac-Toe_React.js" target="_blank" style={{ display: 'block' }} className="work-wrap">
+      <StaticImage
+        src="../../images/tictactoe/thumbnail.png"
+        alt="React TicTacToe App."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
   )
 }
 
