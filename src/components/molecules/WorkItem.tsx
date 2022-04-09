@@ -1,6 +1,25 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
+const DisappearChat = () => {
+  return (
+    <a
+      href="https://nakamura0907.github.io/disappear-chat/public/index.html"
+      target="_blank"
+      style={{ display: 'block' }}
+      className="work-wrap"
+    >
+      <StaticImage
+        src="../../images/disappear-chat/thumbnail.png"
+        alt="消えるチャットアプリ."
+        imgClassName="work"
+        layout="fullWidth"
+        objectFit="contain"
+      />
+    </a>
+  )
+}
+
 const FlutterTodoImage = () => {
   return (
     <a href="https://github.com/nakamura0907/todolist-flutter" target="_blank" style={{ display: 'block' }} className="work-wrap">
@@ -136,4 +155,15 @@ const TicTacImage = () => {
   )
 }
 
-export { FlutterTodoImage, NWeatherImage, CPGExtensionImage, HTTImage, MyDImage, ERPSImage, TodoImage, TownImage, TicTacImage }
+export {
+  DisappearChat,
+  FlutterTodoImage,
+  NWeatherImage,
+  CPGExtensionImage,
+  HTTImage,
+  MyDImage,
+  ERPSImage,
+  TodoImage,
+  TownImage,
+  TicTacImage
+}
