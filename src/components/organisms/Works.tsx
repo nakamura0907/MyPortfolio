@@ -1,6 +1,7 @@
 import React from 'react'
 import {
   CPGExtensionImage,
+  DisappearChat,
   ERPSImage,
   FlutterTodoImage,
   HTTImage,
@@ -20,6 +21,7 @@ const Works = () => {
           {/* <p>今後開発してみたいアプリについて書く</p> */}
         </div>
         <div className="content">
+          <DisappearChat />
           <FlutterTodoImage />
           <NWeatherImage />
           <CPGExtensionImage />
