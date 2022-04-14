@@ -1,0 +1,14 @@
+.gallery {
+}
+
+.gallery-link {
+  display: block;
+  overflow: hidden;
+}
+.gallery-image {
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+.gallery-image:hover {
+  transform: scale(1.1);
+}
