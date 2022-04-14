@@ -72,7 +72,7 @@ export const style = css`
     .main .l-inner {
       margin-left: auto;
       margin-right: auto;
-      max-width: 920px;
+      max-width: 1200px;
     }
   }
 `
