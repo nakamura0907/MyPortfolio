@@ -7,5 +7,9 @@ export const styled = css`
 
   .copyright {
     color: #9a9a9a;
+
+    a {
+      color: #9a9a9a;
+    }
   }
 `

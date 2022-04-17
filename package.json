@@ -18,7 +18,8 @@
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "start": "npm run dev",
     "test": "npm run type-check && npm run lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "serve": "gatsby serve"
   },
   "engines": {
     "node": ">=8.0.0"

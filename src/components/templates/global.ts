@@ -25,6 +25,10 @@ export const style = css`
     font-family: 'Times New Roman', Times, serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   img {
     max-width: 100%;
   }
