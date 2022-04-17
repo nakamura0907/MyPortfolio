@@ -50,7 +50,11 @@ export const style = css`
   }
 
   .section {
-    padding: 5.65rem 0;
+    padding: 5.65rem 0 0;
+
+    &:last-child {
+      padding-bottom: 5.65rem;
+    }
 
     &-title {
       position: relative;
@@ -77,6 +81,17 @@ export const style = css`
       margin-left: auto;
       margin-right: auto;
       max-width: 1200px;
+    }
+
+    .l-flex-pc {
+      display: flex;
+    }
+
+    .w-3-pc {
+      width: 30%;
+    }
+    .w-7-pc {
+      width: 70%;
     }
   }
 `

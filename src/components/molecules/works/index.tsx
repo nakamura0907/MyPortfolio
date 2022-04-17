@@ -43,7 +43,7 @@ const Works = () => {
             }
             return (
               <Link to={image.name} className="gallery-link" key={index}>
-                <GatsbyImage image={Image} className="gallery-image" alt={image.name} />
+                <GatsbyImage image={Image} backgroundColor="white" className="gallery-image" alt={image.name} />
               </Link>
             )
           })}

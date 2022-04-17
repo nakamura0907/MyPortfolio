@@ -1,0 +1,35 @@
+.about .avatar {
+  margin-bottom: 1.9rem;
+}
+.about .avatar .gatsby-image-wrapper {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 50%;
+}
+
+.about .profile dl:not(:last-child) {
+  margin-bottom: 1.41rem;
+}
+
+.about .profile dt {
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .about .profile dl {
+    display: flex;
+  }
+  .about .profile dt {
+    width: 30%;
+  }
+  .about .profile dd {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about .avatar {
+    margin-bottom: 0;
+  }
+}
