@@ -1,0 +1,16 @@
+.observer {
+  overflow: hidden;
+}
+
+.fadein {
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.fadein-up {
+  transform: translateY(30px);
+}
+.is-inview .fadein-up {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,6 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
 import React from 'react'
+import { FadeUp } from '../../atoms/fadein'
 
 import './style.css'
 
@@ -42,9 +43,11 @@ const Works = () => {
               return null
             }
             return (
-              <Link to={image.name} className="gallery-link" key={index}>
-                <GatsbyImage image={Image} backgroundColor="white" className="gallery-image" alt={image.name} />
-              </Link>
+              <FadeUp key={index}>
+                <Link to={image.name} className="gallery-link">
+                  <GatsbyImage image={Image} backgroundColor="white" className="gallery-image" alt={image.name} />
+                </Link>
+              </FadeUp>
             )
           })}
         </div>
