@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
 import React from 'react'
-import { FadeUp } from '../../atoms/fadein'
+import { FadeUp } from '../../atoms/observer'
 
 import './style.css'
 

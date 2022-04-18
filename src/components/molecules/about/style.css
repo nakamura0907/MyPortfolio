@@ -8,12 +8,20 @@
   border-radius: 50%;
 }
 
+.about .profile {
+  margin-bottom: 1.9rem;
+}
+
 .about .profile dl:not(:last-child) {
   margin-bottom: 1.41rem;
 }
 
 .about .profile dt {
   opacity: 0.6;
+}
+
+.about .skills-wrap > *:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +37,13 @@
 }
 
 @media (min-width: 1024px) {
+  .about .l-flex-pc {
+    margin-bottom: 1.9rem;
+  }
   .about .avatar {
+    margin-bottom: 0;
+  }
+  .about .profile {
     margin-bottom: 0;
   }
 }

@@ -73,6 +73,11 @@ export const style = css`
         height: 2px;
         background: #006bda;
       }
+
+      &-sub {
+        margin-bottom: 1.4rem;
+        font-size: 1.4rem;
+      }
     }
   }
 

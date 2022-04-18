@@ -39,3 +39,24 @@ export const FadeUp: React.FC = ({ children }) => {
     </Observer>
   )
 }
+
+interface ProgressProps {
+  title: string
+  value: number
+}
+
+export const Progress: React.FC<ProgressProps> = ({ title, value }) => {
+  return (
+    <Observer>
+      <div className="progress">
+        <div className="progress-header">
+          <div>{title}</div>
+          <span className="progress-value">{value}%</span>
+        </div>
+        <div className="progress-bar-container">
+          <div className="progress-bar" style={{ width: `${value}%` }} />
+        </div>
+      </div>
+    </Observer>
+  )
+}
