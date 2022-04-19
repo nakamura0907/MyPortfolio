@@ -12,7 +12,7 @@ const Profile: React.FC = () => (
     </dl>
     <dl>
       <dt>職業</dt>
-      <dd>専門学生3年</dd>
+      <dd>専門学校生3年</dd>
     </dl>
     <dl>
       <dt>資格</dt>
