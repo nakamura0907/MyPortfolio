@@ -1,6 +1,7 @@
 .hero {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -14,6 +15,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  z-index: -1;
 }
 .hero-background::before {
   content: '';
@@ -25,7 +27,15 @@
 }
 
 .hero-title {
-  position: relative;
+  position: absolute;
+  top: 50%;
   font-size: 4rem;
   text-align: center;
+  transform: translateY(-50%);
+}
+
+.hero-arrow {
+  margin-top: auto;
+  font-size: 4rem;
+  cursor: pointer;
 }
