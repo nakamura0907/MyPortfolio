@@ -3,4 +3,4 @@ layout: page
 title: 'PHP BBS'
 ---
 
-準備中です
+PHPで作成した掲示板です

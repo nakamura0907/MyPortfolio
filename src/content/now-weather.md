@@ -3,4 +3,4 @@ layout: page
 title: 'Now Weather'
 ---
 
-準備中です
+FlutterとWeather APIを利用したお天気アプリです

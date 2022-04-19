@@ -3,4 +3,4 @@ layout: page
 title: 'TodoList Flutter'
 ---
 
-準備中です
+Flutterで作成した端末内保存TodoListです。

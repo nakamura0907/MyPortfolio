@@ -3,4 +3,4 @@ layout: page
 title: 'My Diary'
 ---
 
-準備中です
+PHPで作成した日記アプリです

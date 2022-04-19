@@ -3,4 +3,4 @@ layout: page
 title: '翻訳LINEBot'
 ---
 
-準備中です
+AWS Lambda + Node.js環境で作成したLINEのDeepL翻訳Botです。
