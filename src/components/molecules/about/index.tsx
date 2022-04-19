@@ -1,5 +1,6 @@
 import React from 'react'
 import Avatar from '../../atoms/avatar'
+import PR from '../pr'
 import Profile from '../profile'
 import Skills from '../skills'
 
@@ -16,10 +17,7 @@ const About = () => {
           <Profile />
         </div>
 
-        {/* <div className="free">
-          <p></p>
-        </div> */}
-
+        <PR />
         <Skills />
       </div>
     </section>

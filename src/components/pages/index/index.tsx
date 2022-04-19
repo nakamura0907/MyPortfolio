@@ -5,14 +5,15 @@ import Works from '../../molecules/works'
 
 import Avatar from '../../../images/avatar.png'
 import { styled } from './style'
+import Hero from '../../molecules/hero'
 
 const Index = () => {
   return (
     <div css={styled}>
-      <article className="hero">
+      <Hero>
         <div className="hero-background" style={{ backgroundImage: `url(${Avatar})` }}></div>
         <h1 className="hero-title">ようこそ</h1>
-      </article>
+      </Hero>
       <About />
       <Works />
       <Contact />

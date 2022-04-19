@@ -24,15 +24,17 @@ interface PageTemplateProps {
   }
 }
 
-const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => (
-  <Layout>
-    <div className="l-inner">
-      <h1>{data.markdownRemark.frontmatter.title}</h1>
-      {/* eslint-disable-next-line react/no-danger */}
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-    </div>
-  </Layout>
-)
+const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => {
+  return (
+    <Layout>
+      <div className="l-inner">
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        {/* eslint-disable-next-line react/no-danger */}
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      </div>
+    </Layout>
+  )
+}
 
 export default PageTemplate
 
