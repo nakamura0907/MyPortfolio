@@ -28,4 +28,4 @@ WEBサイトを作成しようとした時、文字の配色がおしゃれな�
 
 ## リンク
 
-[こちら]()から拡張機能をインストールすることができます。
+[こちら](https://chrome.google.com/webstore/detail/color-property-getter/habnllbmpgfdedfjecifgipdaacfahcn?hl=ja&authuser=0)から拡張機能をインストールすることができます。

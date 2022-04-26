@@ -26,4 +26,4 @@ Next.jsとSocket.ioを利用して作成した簡単なチャットアプリで�
 
 ## リンク
 
-[こちら]()のリンクからデモを試すことができます。
+[こちら](https://nakamura0907.github.io/disappear-chat/public/index.html)のリンクからデモを試すことができます。

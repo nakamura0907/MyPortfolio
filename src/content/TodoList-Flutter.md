@@ -23,4 +23,4 @@ Flutterで作成した端末内保存TodoListです。
 
 ## リンク
 
-[こちら]()のリンクからリポジトリに飛ぶことができます。
+[こちら](https://github.com/nakamura0907/todolist-flutter)のリンクからリポジトリに飛ぶことができます。
