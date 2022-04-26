@@ -22,7 +22,7 @@ const Header = () => {
           <div className="navbar-left">
             <div className="logo">
               <Link to="/" className="navbar-item">
-                Portfolio
+                NPortfolio
               </Link>
             </div>
           </div>

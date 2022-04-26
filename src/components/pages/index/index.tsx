@@ -20,7 +20,7 @@ const Index = () => {
   }
 
   return (
-    <div css={styled} id="top">
+    <div css={styled}>
       <Hero handleClick={handleClick} />
       <About ref={ref} />
       <Works />

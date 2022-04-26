@@ -6,9 +6,6 @@ import './style.css'
 const Navigation = () => (
   <ul className="nav">
     <li>
-      <Link to="/#top">トップ</Link>
-    </li>
-    <li>
       <Link to="/#about">自己紹介</Link>
     </li>
     <li>

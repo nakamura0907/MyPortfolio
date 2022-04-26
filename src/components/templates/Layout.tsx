@@ -5,6 +5,7 @@ import { Global } from '@emotion/react'
 import Footer from '../organisms/footer'
 import Header from '../organisms/header'
 import MyHelmet from './MyHelmet'
+import Fab from '../atoms/fab'
 import { style } from './global'
 
 if (typeof window !== `undefined`) {
@@ -21,6 +22,7 @@ const Layout: React.FC = ({ children }) => {
         <main className="main">{children}</main>
         <Footer />
       </div>
+      <Fab />
     </>
   )
 }
