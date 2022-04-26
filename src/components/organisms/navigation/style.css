@@ -1,0 +1,14 @@
+.nav {
+  list-style-type: none;
+}
+
+.nav > li > a {
+  display: block;
+  padding: 2rem 1.4rem;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.nav > li > a:hover {
+  background-color: #dbdbdb;
+}

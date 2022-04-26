@@ -32,7 +32,7 @@ const Works = () => {
     name: node.name
   }))
   return (
-    <section className="section works">
+    <section className="section works" id="works">
       <div className="l-inner">
         <h2 className="section-title">作品集</h2>
 

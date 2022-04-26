@@ -2,9 +2,10 @@
 
 - CloudFrontのディストリビューションを削除する
 
-- headerの作成
 - 詳細ページの作成
+- ???vh以上スクロールでTOPへボタン表示
 
+- safariでbackground-imageが効かない(background-attache)
 - サムネイルに1.などの数字を付けて、並び順を操作する
 - お問い合わせフォームをポートフォリオ内に作成
 

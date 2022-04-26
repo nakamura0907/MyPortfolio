@@ -8,6 +8,7 @@ export const style = css`
   }
   html {
     font-size: 16px;
+    scroll-behavior: smooth;
   }
   body {
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック',
@@ -41,9 +42,6 @@ export const style = css`
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  .header {
-    display: none;
   }
   .main {
     margin-bottom: auto;
