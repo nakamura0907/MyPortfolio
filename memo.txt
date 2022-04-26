@@ -2,9 +2,8 @@
 
 - CloudFrontのディストリビューションを削除する
 
-- 詳細ページの作成
-
-- safariでbackground-imageが効かない(background-attache)
+- トップページならスムーススクロール、詳細ページならページ遷移させる
+- safariでbackground-image(background-attache)が効かない→fixedを利用する
 - サムネイルに1.などの数字を付けて、並び順を操作する
 - お問い合わせフォームをポートフォリオ内に作成
 

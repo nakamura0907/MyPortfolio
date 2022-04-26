@@ -1,0 +1,25 @@
+.detail {
+  margin: 4rem 0;
+}
+
+.detail h1 {
+  margin-bottom: 3rem;
+}
+
+.detail h2 {
+  padding: 2.4rem 0 2rem;
+}
+
+.detail p {
+  margin-bottom: 1.4rem;
+}
+
+.detail ul {
+  margin: revert;
+  padding: revert;
+}
+
+.detail a {
+  color: #1967d2;
+  text-decoration: underline;
+}
