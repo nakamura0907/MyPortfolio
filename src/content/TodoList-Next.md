@@ -23,4 +23,4 @@ Next.jsで作成したTodoListです。
 
 ## リンク
 
-[こちら]()からリポジトリに飛ぶことができます。
+[こちら](https://github.com/nakamura0907/TodoList_Next)からリポジトリに飛ぶことができます。

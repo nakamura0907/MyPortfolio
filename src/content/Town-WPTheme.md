@@ -21,4 +21,4 @@ title: 'Town WPTheme'
 
 ## リンク
 
-[こちら]()のリンクからブログに飛ぶことができます。
+[こちら](https://nakamura0907.wp.xdomain.jp/)のリンクからブログに飛ぶことができます。
