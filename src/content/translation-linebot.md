@@ -21,4 +21,4 @@ AWS Lambda + Node.js環境で作成したLINEのDeepL翻訳Botです。
 
 ## リンク
 
-[こちら]()のリンクから友達登録を行うことができます。
+[こちら](https://liff.line.me/1645278921-kWRPP32q/?accountId=610oibel)のリンクから友達登録を行うことができます。
