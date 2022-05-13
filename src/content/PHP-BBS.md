@@ -4,7 +4,7 @@ title: 'PHP BBS'
 ---
 
 <div align="center">
-<img src="../images/PHP-BBS/demo.gif" alt="PHP BBS デモ画像">
+<img src="../images/PHP-BBS/demo.gif" alt="PHP BBS デモ">
 </div>
 
 ## 概要
