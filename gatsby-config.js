@@ -3,7 +3,7 @@ module.exports = {
     title: 'MyPortfolio',
     description: 'Nakamura0907 Portfolio',
     keywords: 'gatsbyjs, portfolio',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    siteUrl: 'https://myportfolio65200.gatsbyjs.io/',
     author: {
       name: 'nakamura0907',
       url: 'https://twitter.com',
@@ -39,6 +39,13 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'thumbnail',
+        path: `${__dirname}/src/images/thumbnail`
+      }
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
@@ -66,7 +73,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+        siteUrl: 'https://myportfolio65200.gatsbyjs.io/'
       }
     },
     'gatsby-plugin-image',
