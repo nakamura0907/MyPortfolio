@@ -28,6 +28,12 @@
 /* ドロワーメニュー */
 .drawer-icon-wrap {
   cursor: pointer;
+  z-index: 10000;
+}
+.drawer-icon-wrap.is-open {
+  position: fixed;
+  right: 1.4rem;
+  top: 0;
 }
 .drawer-icon {
   position: relative;
@@ -41,6 +47,7 @@
   height: 3px;
   border-radius: 2px;
   background-color: #b8b8b8;
+  transition: all 0.3s ease;
 }
 .drawer-icon span:nth-child(1) {
   top: 0;
@@ -51,6 +58,15 @@
 }
 .drawer-icon span:nth-child(3) {
   bottom: 0;
+}
+.is-open span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 8px);
+}
+.is-open span:nth-child(2) {
+  opacity: 0;
+}
+.is-open span:nth-child(3) {
+  transform: translate(-1px, -12px) rotate(-45deg);
 }
 
 .drawer-menu-wrap {
@@ -74,6 +90,8 @@
 }
 
 .drawer-menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-left: auto;
   width: 60%;
@@ -86,4 +104,8 @@
 }
 .is-open .drawer-menu {
   transform: translate(0);
+}
+
+.drawer-menu .nav {
+  margin: auto 0;
 }

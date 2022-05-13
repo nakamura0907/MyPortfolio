@@ -26,6 +26,10 @@ export const style = css`
     font-family: 'Times New Roman', Times, serif;
   }
 
+  p {
+    line-height: 2;
+  }
+
   a {
     text-decoration: none;
   }

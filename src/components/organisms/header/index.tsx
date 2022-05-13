@@ -27,7 +27,7 @@ const Header = () => {
             </div>
           </div>
           <div className="navbar-right">
-            <div className="drawer-icon-wrap navbar-item" onClick={() => setIsOpen(true)}>
+            <div className={`drawer-icon-wrap navbar-item ${isOpen ? 'is-open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
               <div className="drawer-icon">
                 <span></span>
                 <span></span>
