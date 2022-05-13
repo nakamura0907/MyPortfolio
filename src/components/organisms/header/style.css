@@ -47,6 +47,7 @@
   height: 3px;
   border-radius: 2px;
   background-color: #b8b8b8;
+  background-color: black;
   transition: all 0.3s ease;
 }
 .drawer-icon span:nth-child(1) {
