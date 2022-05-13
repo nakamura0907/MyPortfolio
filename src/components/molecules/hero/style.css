@@ -15,7 +15,7 @@
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   z-index: -1;
 }
 .hero-background::before {
@@ -39,4 +39,19 @@
   margin-top: auto;
   font-size: 4rem;
   cursor: pointer;
+}
+
+.hero-image {
+  position: fixed;
+  z-index: -1;
+  display: none;
+  filter: contrast(0.5);
+}
+@media (max-width: 768px) {
+  .hero-background {
+    background: none !important;
+  }
+  .hero-image {
+    display: block;
+  }
 }
