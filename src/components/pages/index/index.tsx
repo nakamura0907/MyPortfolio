@@ -5,7 +5,7 @@ import Contact from '../../molecules/contact'
 import Hero from '../../molecules/hero'
 import Works from '../../molecules/works'
 
-import { styled } from './style'
+import './style.css'
 
 const Index = () => {
   const ref = React.createRef<HTMLElement>()
@@ -20,11 +20,13 @@ const Index = () => {
   }
 
   return (
-    <div css={styled}>
+    <div>
       <Hero handleClick={handleClick} />
-      <About ref={ref} />
-      <Works />
-      <Contact />
+      <div className="hero-bottom">
+        <About ref={ref} />
+        <Works />
+        <Contact />
+      </div>
     </div>
   )
 }

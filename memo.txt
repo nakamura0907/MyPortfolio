@@ -3,3 +3,11 @@
 
 ## v2.2
 - TodoList-Nextの成果物更新
+
+# v2.3.0
+
+- ハンバーガーメニューの修正
+- HERO部分をbackground: fixedと画像に変更
+- 仮のバナーロゴ作成
+
+# v2.x.x

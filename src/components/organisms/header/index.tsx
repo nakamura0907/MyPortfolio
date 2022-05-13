@@ -1,5 +1,6 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import Navigation from '../navigation'
 
 import './style.css'
@@ -22,12 +23,12 @@ const Header = () => {
           <div className="navbar-left">
             <div className="logo">
               <Link to="/" className="navbar-item">
-                NPortfolio
+                <StaticImage height={90} src="../../../images/logo-banner.png" alt="Nakamura0907" />
               </Link>
             </div>
           </div>
           <div className="navbar-right">
-            <div className="drawer-icon-wrap navbar-item" onClick={() => setIsOpen(true)}>
+            <div className={`drawer-icon-wrap navbar-item ${isOpen ? 'is-open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
               <div className="drawer-icon">
                 <span></span>
                 <span></span>

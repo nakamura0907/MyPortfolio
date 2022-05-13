@@ -1,6 +1,9 @@
 import { css } from '@emotion/react'
 
 export const style = css`
+  :root {
+    --background-color: #efefef;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@ export const style = css`
   body {
     font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック',
       'MS PGothic', sans-serif;
-    background-color: #efefef;
+    background-color: var(--background-color);
     line-height: 1.6;
   }
 
@@ -24,6 +27,10 @@ export const style = css`
   h5,
   h6 {
     font-family: 'Times New Roman', Times, serif;
+  }
+
+  p {
+    line-height: 2;
   }
 
   a {
