@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '@components/template/layout'
 
 import './style.css'
+import Container from '@src/components/ui/container'
 
 interface PageTemplateProps {
   data: {
@@ -31,9 +32,11 @@ const PageTemplate: React.FC<PageTemplateProps> = ({ data }) => {
     <Layout>
       <div className="detail">
         <div className="l-inner">
-          <h1>{data.markdownRemark.frontmatter.title}</h1>
-          {/* eslint-disable-next-line react/no-danger */}
-          <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          <Container size="small">
+            <h1>{data.markdownRemark.frontmatter.title}</h1>
+            {/* eslint-disable-next-line react/no-danger */}
+            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+          </Container>
         </div>
       </div>
     </Layout>
