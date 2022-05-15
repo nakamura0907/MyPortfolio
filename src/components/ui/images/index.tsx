@@ -3,11 +3,12 @@ import classnames from 'classnames'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
-type Props = {
+import './style.css'
+
+type LogoBannerProps = {
   className?: string
 }
-
-const Logo: React.FC<Props> = ({ className }) => (
+export const LogoBanner: React.FC<LogoBannerProps> = ({ className }) => (
   <div className={classnames('logo', className)}>
     <Link to="/">
       <StaticImage src="../../../images/logo-banner.png" alt="ポートフォリオサイトロゴ" />
@@ -15,4 +16,8 @@ const Logo: React.FC<Props> = ({ className }) => (
   </div>
 )
 
-export default Logo
+export const Avatar = () => (
+  <div className="avatar">
+    <StaticImage width={200} height={200} src="../../../images/avatar.png" alt="avatar" />
+  </div>
+)

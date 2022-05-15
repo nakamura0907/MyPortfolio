@@ -7,13 +7,18 @@
   --size-3 : 2.7rem;
   --size-4 : 3.8rem;
   --size-5 : 5.4rem;
+  --sub-section-space : var(--size-4); /** h2とh3の間など */
+  --contents-space : var(--size-3); /** AboutとWorks間など */
 
 /* 配色 */
   --white : #fff;
   --gray : #cdcdcd;
   --gray-dark : #dbdbdb;
   --black : #000;
-  --primary : skyblue;
+
+/* サイトカラー */
+  --primary : #30c1ff;
+  --secondary : #bebebe;
 
 /* タイポグラフィ */
   --font-family-sans-serif : BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
@@ -42,7 +47,18 @@ h3,
 h4,
 h5,
 h6 {
+  margin-bottom : var(--size-2);
   font-weight : inherit;
+}
+
+h1 {
+  font-size : 2.4rem;
+}
+h2 {
+  font-size : 2rem;
+}
+h3 {
+  font-size : 1.5rem;
 }
 
 p {
@@ -74,4 +90,9 @@ small {
 /* レイアウト */
 .l-inner {
   padding : 0 var(--size-base);
+}
+
+/* タイポグラフィ */
+.text-secondary {
+  color : var(--secondary);
 }

@@ -4,7 +4,7 @@ title: 'タイトル'
 ---
 
 <div align="center">
-<img src="../images/thumbnail" alt="タイトル サムネイル">
+<img src="../images/" alt="タイトル サムネイル">
 </div>
 
 ## 概要

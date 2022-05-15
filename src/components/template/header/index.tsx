@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Logo from '@components/ui/Logo'
+import { LogoBanner } from '@components/ui/images'
 import Hamburger from '@src/components/ui/hamburger'
 
 import './style.css'
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="l-inner">
         <div className="navbar">
           <div className="navbar-left">
-            <Logo className="navbar-item" />
+            <LogoBanner className="navbar-item" />
           </div>
           <div className="navbar-right">
             <Hamburger className="navbar-item" isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />

@@ -5,13 +5,14 @@ import './style.css'
 
 type Props = {
   size?: 'small' | 'medium'
+  className?: string
   children: React.ReactNode
 }
 
-const Container: React.FC<Props> = ({ size, children }) => {
+const Container: React.FC<Props> = ({ size, className, children }) => {
   return (
     <div
-      className={classNames('l-container', {
+      className={classNames('l-container', className, {
         'l-container-small': size === 'small',
         'l-container-medium': size === 'medium'
       })}
