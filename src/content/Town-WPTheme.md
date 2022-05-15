@@ -4,7 +4,7 @@ title: 'Town WPTheme'
 ---
 
 <div align="center">
-<img src="../images/thumbnail/Town-WPTheme.png" alt="Town WordPress Theme サムネイル">
+<img src="../images/works/Town-WPTheme/thumbnail.png" alt="Town WordPress Theme サムネイル">
 </div>
 
 ## 概要

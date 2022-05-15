@@ -5,13 +5,13 @@ import './style.css'
 
 type Props = React.HTMLAttributes<HTMLElement> & {}
 
-const Section: React.FC<Props> = (props) => {
+const Section = React.forwardRef<HTMLElement, Props>((props, ref) => {
   const { className, children } = props
   return (
-    <section {...props} className={classNames('section', className)}>
+    <section ref={ref} {...props} className={classNames('section', className)}>
       {children}
     </section>
   )
-}
+})
 
 export default Section

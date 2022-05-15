@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { LogoBanner } from '@components/ui/images'
+import { LogoBanner } from '@src/components/ui/image'
 import Hamburger from '@src/components/ui/hamburger'
 
 import './style.css'

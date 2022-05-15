@@ -5,7 +5,7 @@ title: 'TodoList Next.js'
 
 
 <div align="center">
-<img src="../images/TodoList-Next/demo.gif" alt="TodoList Next.js デモ">
+<img src="../images/works/to-do-next/demo.gif" alt="TodoList Next.js デモ">
 </div>
 
 ## 概要

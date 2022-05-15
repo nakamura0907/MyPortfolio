@@ -1,5 +1,5 @@
 import Container from '@src/components/ui/container'
-import { Avatar } from '@src/components/ui/images'
+import { Avatar } from '@src/components/ui/image'
 import Section from '@src/components/ui/section'
 import React from 'react'
 import PR from './pr'
@@ -8,9 +8,9 @@ import Skills from './skills'
 
 import './style.css'
 
-const About = () => {
+const About = React.forwardRef<HTMLElement>((_, ref) => {
   return (
-    <Section className="about" id="about">
+    <Section ref={ref} className="about" id="about">
       <Container className="l-inner">
         <h2>About</h2>
         <div className="about-info">
@@ -22,6 +22,6 @@ const About = () => {
       </Container>
     </Section>
   )
-}
+})
 
 export default About

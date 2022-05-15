@@ -21,3 +21,5 @@ export const Avatar = () => (
     <StaticImage width={200} height={200} src="../../../images/avatar.png" alt="avatar" />
   </div>
 )
+
+export const Works = {}

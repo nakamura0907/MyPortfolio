@@ -4,7 +4,7 @@ title: 'TodoList Flutter'
 ---
 
 <div align="center">
-<img src="../images/thumbnail/TodoList-Flutter.png" alt="TodoList Flutter サムネイル">
+<img src="../images/works/to-do-flutter/thumbnail.png" alt="TodoList Flutter サムネイル">
 </div>
 
 ## 概要

@@ -7,6 +7,7 @@ import Header from '../header'
 
 import './global.css'
 import './style.css'
+import Fab from '@src/components/ui/fab'
 
 if (typeof window !== `undefined`) {
   smoothscroll.polyfill()
@@ -30,6 +31,7 @@ const Layout: React.FC = ({ children }) => {
           </div>
         </footer>
       </div>
+      <Fab />
     </>
   )
 }
