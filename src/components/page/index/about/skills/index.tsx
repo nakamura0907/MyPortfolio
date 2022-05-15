@@ -10,7 +10,9 @@ const Skills = () => {
       <p>&#8251; もっとも得意なスキルを基準にしています</p>
       <div className="progress-wrap">
         <Progress title="PHP" value={100} />
+        <Progress title="HTML/CSS" value={100} />
         <Progress title="JavaScript" value={80} />
+        <Progress title="WordPress" value={75} />
         <Progress title="Node.js" value={75} />
         <Progress title="React" value={70} />
         <Progress title="TypeScript" value={55} />
