@@ -4,7 +4,7 @@ title: 'PHP BBS'
 ---
 
 <div align="center">
-<img src="../images/works/PHP-BBS/demo.gif" alt="PHP BBS デモ">
+<img src="../images/PHP-BBS/demo.gif" alt="PHP BBS デモ">
 </div>
 
 ## 概要
@@ -19,7 +19,7 @@ PHPで作成した掲示板アプリです。
 
 複数回PDOの接続を行ってしまうのを防ぐため、PDOのラッパークラスにはシングルトンパターンを採用しました。
 <div align="center">
-<img src="../images/works/PHP-BBS/singleton.PNG" alt="PHP BBS シングルトンパターン">
+<img src="../images/PHP-BBS/singleton.PNG" alt="PHP BBS シングルトンパターン">
 </div>
 <br />
 

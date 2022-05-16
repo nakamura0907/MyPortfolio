@@ -12,12 +12,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": false,
-    "preserveConstEnums": true,
-    "baseUrl": "./",
-    "paths": {
-      "@src/*": ["./src/*"],
-      "@components/*": ["./src/components/*"]
-    }
+    "preserveConstEnums": true
   },
   "include": ["./src/**/*"]
 }

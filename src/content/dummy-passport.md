@@ -4,7 +4,7 @@ title: 'Dummy-API Passport.js'
 ---
 
 <div align="center">
-<img src="../images/works/dummy-passport/thumbnail.png" alt="Dummy-API Passport.js サムネイル">
+<img src="../images/thumbnail/dummy-passport.png" alt="Dummy-API Passport.js サムネイル">
 </div>
 
 ## 概要
