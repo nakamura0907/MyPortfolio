@@ -1,9 +1,0 @@
-.pr {
-}
-
-.pr p {
-  font-size: 0.85rem;
-}
-.pr p:not(:last-child) {
-  margin-bottom: 0.7rem;
-}

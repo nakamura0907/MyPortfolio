@@ -1,0 +1,40 @@
+.header {
+  position : sticky;
+  top : 0;
+  z-index : 1000;
+  width : 100%;
+}
+
+.navbar {
+  display : flex;
+  align-items : center;
+}
+
+.navbar-right {
+  margin-left : auto;
+}
+
+.navbar-item {
+  display : flex;
+  align-items : center;
+  min-height : 100px;
+  max-height : 100px;
+  padding : 0 1rem;
+}
+
+.navbar-list-hamburger {
+  display : flex;
+  flex-direction : column;
+  margin : auto 0;
+}
+.navbar-list-hamburger a {
+  display : block;
+  padding : var(--size-2) var(--size-1);
+  color : var(--black);
+  font-size : var(--size-1);
+  transition : all .3s ease;
+}
+.navbar-list-hamburger a:hover {
+  background-color : var(--gray-dark);
+  text-decoration : none;
+}

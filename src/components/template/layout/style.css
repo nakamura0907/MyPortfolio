@@ -1,0 +1,10 @@
+.footer {
+  padding : var(--size-4) 0;
+  background-color : var(--black);
+  color : var(--white);
+}
+
+.footer .copyright,
+.footer .copyright a {
+  color : var(--gray);
+}
