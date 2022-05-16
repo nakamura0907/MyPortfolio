@@ -4,7 +4,7 @@ title: '翻訳LINEBot'
 ---
 
 <div align="center">
-<img src="../images/thumbnail/translation-linebot.png" alt="翻訳LINEBot サムネイル">
+<img src="../images/works/thumbnail/translation-linebot.png" alt="翻訳LINEBot サムネイル">
 </div>
 
 ## 概要
