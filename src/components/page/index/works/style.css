@@ -1,0 +1,27 @@
+.gallery-wrap a {
+  display : block;
+  overflow : hidden;
+}
+
+.gallery-wrap .gatsby-image-wrapper {
+  border-radius : 4px;
+  transition : all .3s ease;
+}
+.gallery-wrap .gatsby-image-wrapper:hover {
+  transform : scale(1.1);
+
+  filter : blur(1px);
+}
+
+@media (min-width: 768px) {
+  .gallery-wrap {
+    display : flex;
+    flex-wrap : wrap;
+
+    row-gap : 1rem;
+    column-gap : 1rem;
+  }
+  .gallery-wrap a {
+    width : calc(50% - 1rem / 2);
+  }
+}

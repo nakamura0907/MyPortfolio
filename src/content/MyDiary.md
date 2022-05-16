@@ -4,7 +4,7 @@ title: 'My Diary'
 ---
 
 <div align="center">
-<img src="../images/thumbnail/MyDiary.png" alt="My Diary サムネイル">
+<img src="../images/works/MyDiary/thumbnail.png" alt="My Diary サムネイル">
 </div>
 
 ## 概要

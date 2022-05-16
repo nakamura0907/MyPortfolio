@@ -1,0 +1,6 @@
+.profile dl:not(:last-child) {
+  margin-bottom : 1rem;
+}
+.profile dt {
+  opacity : .6;
+}
