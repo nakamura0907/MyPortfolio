@@ -1,0 +1,21 @@
+.fab {
+  position: fixed;
+  right: 44px;
+  bottom: 44px;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  color: white;
+  background: #006bda;
+  opacity: 0.4;
+  transform: translateX(calc(100% + 44px));
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.fab:hover {
+  opacity: 1;
+}
+
+.fab.is-visible {
+  transform: none;
+}

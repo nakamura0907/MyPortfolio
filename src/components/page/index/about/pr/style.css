@@ -1,6 +1,0 @@
-.pr p {
-  font-size : .85rem;
-}
-.pr p:not(:last-child) {
-  margin-bottom : var(--size-0);
-}

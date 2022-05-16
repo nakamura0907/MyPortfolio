@@ -1,26 +1,25 @@
 .detail {
-  margin : 4rem 0;
+  margin: 4rem 0;
 }
 
 .detail h1 {
-  margin-bottom : 3rem;
-  text-align : center;
+  margin-bottom: 3rem;
 }
 
 .detail h2 {
-  padding : 2.4rem 0 2rem;
+  padding: 2.4rem 0 2rem;
 }
 
 .detail p {
-  margin-bottom : 1.4rem;
+  margin-bottom: 1.4rem;
 }
 
 .detail ul {
-  list-style-type : disc;
-  margin : revert;
-  padding : revert;
+  margin: revert;
+  padding: revert;
 }
 
 .detail a {
-  text-decoration : underline;
+  color: #1967d2;
+  text-decoration: underline;
 }

@@ -4,7 +4,7 @@ title: '消えるチャット'
 ---
 
 <div align="center">
-<img src="../images/works/disappear-chat/thumbnail.png" alt="消えるチャット サムネイル">
+<img src="../images/thumbnail/disappear-chat.png" alt="消えるチャット サムネイル">
 </div>
 
 ## 概要

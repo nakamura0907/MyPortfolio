@@ -4,7 +4,7 @@ title: 'Color Property Getter'
 ---
 
 <div align="center">
-<img src="../images/works/cpg-chrome-extension/thumbnail.png" alt="Color Property Getter サムネイル">
+<img src="../images/thumbnail/cpg-chrome-extension.png" alt="Color Property Getter サムネイル">
 </div>
 
 ## 概要

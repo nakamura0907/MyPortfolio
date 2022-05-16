@@ -11,16 +11,6 @@ module.exports = {
     }
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-alias-imports`,
-      options: {
-        alias: {
-          '@src': 'src',
-          '@components': 'src/components'
-        },
-        extensions: []
-      }
-    },
     'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-manifest',
@@ -46,6 +36,13 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/src/images`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'thumbnail',
+        path: `${__dirname}/src/images/thumbnail`
       }
     },
     {
