@@ -1,0 +1,19 @@
+.progress-wrap {
+  display : flex;
+  flex-direction : column;
+
+  row-gap : 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .progress-wrap {
+    flex-direction : row;
+    flex-wrap : wrap;
+
+    column-gap : 1rem;
+  }
+
+  .progress-wrap > * {
+    width : calc(50% - 1rem / 2);
+  }
+}

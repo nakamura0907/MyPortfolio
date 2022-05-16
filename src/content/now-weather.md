@@ -6,7 +6,7 @@ title: 'Now Weather'
 FlutterとWeather APIを利用したお天気アプリです
 
 <div align="center">
-<img src="../images/thumbnail/now-weather.png" alt="Now Weather サムネイル">
+<img src="../images/works/now-weather/thumbnail.png" alt="Now Weather サムネイル">
 </div>
 
 ## 概要

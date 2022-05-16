@@ -1,0 +1,23 @@
+.button {
+  display : inline-block;
+  padding : 0 var(--size-3);
+  border : none;
+  border-radius : 2px;
+  background-color : var(--primary);
+  color : var(--white, white);
+  font-size : 1rem;
+  line-height : var(--size-3);
+  text-decoration : none;
+  text-align : center;
+  text-transform : none;
+  transition : opacity .3s ease-in-out;
+}
+.button:hover {
+  opacity : .6;
+}
+
+.button-large {
+  padding-right : var(--size-4);
+  padding-left : var(--size-4);
+  line-height : var(--size-4);
+}
