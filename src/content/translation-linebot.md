@@ -4,7 +4,7 @@ title: '翻訳LINEBot'
 ---
 
 <div align="center">
-<img src="../images/works/thumbnail/translation-linebot.png" alt="翻訳LINEBot サムネイル">
+<img src="../images/works/translation-linebot/thumbnail.png" alt="翻訳LINEBot サムネイル">
 </div>
 
 ## 概要
@@ -17,7 +17,9 @@ AWS Lambda + Node.js環境で作成したLINEのDeepL翻訳Botです。
 
 ## 今後の改善点
 
-- 言語を切り替えられるようにする。
+- リファクタリングを行う
+- もっと楽に言語を切り替えられるようにする
+- 不適切な言語を受け取った時の挙動を変える
 
 ## リンク
 
