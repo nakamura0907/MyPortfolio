@@ -1,5 +1,16 @@
 .gallery-wrap a {
   display : block;
+  overflow : hidden;
+}
+
+.gallery-wrap .gatsby-image-wrapper {
+  border-radius : 4px;
+  transition : all .3s ease;
+}
+.gallery-wrap .gatsby-image-wrapper:hover {
+  transform : scale(1.1);
+
+  filter : blur(1px);
 }
 
 @media (min-width: 768px) {
