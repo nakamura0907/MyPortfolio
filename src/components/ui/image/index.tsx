@@ -27,6 +27,14 @@ const WorkImageBase: React.FC = ({ children }) => {
   return <FadeUp>{children}</FadeUp>
 }
 
+const BookLog = () => (
+  <Link to="/book-log">
+    <WorkImageBase>
+      <StaticImage src="../../../images/works/book-log/thumbnail.png" alt="Book Log サムネイル" />
+    </WorkImageBase>
+  </Link>
+)
+
 const DisappearChat = () => (
   <Link to="/disappear-chat">
     <WorkImageBase>
@@ -99,6 +107,7 @@ const CPG = () => (
 )
 
 export const Works = [
+  BookLog,
   DisappearChat,
   PHPBBS,
   ToDoNext,
